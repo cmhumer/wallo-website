@@ -15,100 +15,46 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #152432;
-      color: #ffffff;
+      background-color: #028090;
+      color: #f0f3bd;
+      overflow-x: hidden;
     }
 
-    header {
+    .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 2rem;
-      background-color: #1C2E46;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+      padding: 5rem;
     }
 
     .logo {
-      font-size: 1.5rem;
+      font-size: 4rem;
       font-weight: 600;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-
-    nav ul li {
-      margin-right: 1rem;
-    }
-
-    a {
-      color: #ffffff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #9ba8c2;
-    }
-
-    .wallet-icon {
-      font-size: 3rem;
-      color: #152432;
     }
 
     .catchphrase {
       font-weight: 500;
-      font-size: 1.2rem;
-      margin-top: 2rem;
-      text-align: center;
+      font-size: 1.5rem;
+      text-align: right;
     }
 
-    .main {
-      text-align: center;
-      margin-top: 5rem;
-    }
-
-    .main h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .main p {
-      font-size: 1.25rem;
-      line-height: 1.5;
+    .description {
       max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .background {
-      background: linear-gradient(135deg, #1c2e46 0%, #152432 100%);
-      padding: 3rem 0;
-      border-radius: 1rem;
-      display: inline-block;
-      margin-top: 3rem;
+      margin: 2rem auto;
+      font-size: 1.1rem;
+      line-height: 1.5;
     }
 
   </style>
 </head>
 <body>
-  <header>
+  <div class="container">
     <div class="logo">Wallo</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="main">
-      <h1>Wallo</h1>
-      <p class="catchphrase">Unlock the future of university blockchain wallets</p>
-      <div class="background">
-        <p>
-          Wallo is a cutting-edge university wallet service that streamlines the way students collect and manage their NFTs. By providing an easy-to-use platform for
+    <div class="catchphrase">Unlock the future of university blockchain wallets</div>
+  </div>
+  <div class="description">
+    <p>Wallo is a cutting-edge university wallet service that streamlines the way students collect and manage their NFTs. By providing an easy-to-use platform for organizing, trading, and showcasing their achievements, Wallo revolutionizes the student experience within the blockchain space.</p>
+  </div>
+</body>
+</html>
