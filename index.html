@@ -1,81 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallo - University Wallet Service</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: #ffffff;
-        }
- 
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #303030;
-        padding: 15px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallo - University Wallet Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #152432;
+      color: #ffffff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1C2E46;
     }
 
     .logo {
-        font-size: 32px;
-        font-weight: bold;
+      font-size: 1.5rem;
+      font-weight: 600;
     }
 
-    .menu {
-        display: flex;
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
     }
 
-    .menu-item {
-        margin-right: 15px;
-        text-transform: uppercase;
-        cursor: pointer;
+    nav ul li {
+      margin-right: 1rem;
     }
 
-    .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 80vh;
-        background-color: #1a1a1a;
+    a {
+      color: #ffffff;
+      text-decoration: none;
     }
 
-    .hero-title {
-        font-size: 64px;
-        font-weight: bold;
-        margin-bottom: 20px;
+    .wallet-icon {
+      font-size: 2rem;
     }
 
-    .hero-subtitle {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 50px;
-        text-transform: uppercase;
+    .catchphrase {
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      text-align: center;
     }
-</style>
 
+    .main {
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    .main h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .main p {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">Wallo</div>
-        <nav class="menu">
-            <div class="menu-item">Home</div>
-            <div class="menu-item">Features</div>
-            <div class="menu-item">Pricing</div>
-            <div class="menu-item">Contact</div>
-        </nav>
-    </header>
-  
-  <section class="hero">
-    <h1 class="hero-title">Wallo</h1>
-    <h2 class="hero-subtitle">Empowering education with blockchain</h2>
-    <button>Get Started</button>
-</section>
+  <header>
+    <div class="logo">Wallo</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="main">
+      <h1>Wallo</h1>
+      <p class="catchphrase">Unlock the future of university blockchain wallets</p>
+      <p>
+        Wallo is a cutting-edge university wallet service that streamlines the way students collect and manage their NFTs. By providing an easy-to-use platform for universities, Wallo enables students to effortlessly sign up and start collecting NFT tickets, rewards, class achievements, transcripts digitally, and much more. With seamless integration into existing university systems, Wallo transforms the student experience.
+      </p>
+    </div>
+  </main>
+  <script src="https://kit.fontawesome.com/5296c2266e.js" crossorigin="anonymous"></script>
+  <div class="wallet-icon" style="text-align: center;">
+    <i class="fas fa-wallet"></i>
+  </div>
+</body>
 
-  </body>
-</html>
