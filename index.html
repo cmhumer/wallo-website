@@ -8,6 +8,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -21,6 +25,7 @@
       align-items: center;
       padding: 1rem 2rem;
       background-color: #1C2E46;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .logo {
@@ -44,13 +49,18 @@
       text-decoration: none;
     }
 
+    a:hover {
+      color: #9ba8c2;
+    }
+
     .wallet-icon {
-      font-size: 2rem;
+      font-size: 3rem;
+      color: #152432;
     }
 
     .catchphrase {
       font-weight: 500;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin-top: 2rem;
       text-align: center;
     }
@@ -72,6 +82,15 @@
       max-width: 800px;
       margin: 0 auto;
     }
+
+    .background {
+      background: linear-gradient(135deg, #1c2e46 0%, #152432 100%);
+      padding: 3rem 0;
+      border-radius: 1rem;
+      display: inline-block;
+      margin-top: 3rem;
+    }
+
   </style>
 </head>
 <body>
@@ -90,14 +109,6 @@
     <div class="main">
       <h1>Wallo</h1>
       <p class="catchphrase">Unlock the future of university blockchain wallets</p>
-      <p>
-        Wallo is a cutting-edge university wallet service that streamlines the way students collect and manage their NFTs. By providing an easy-to-use platform for universities, Wallo enables students to effortlessly sign up and start collecting NFT tickets, rewards, class achievements, transcripts digitally, and much more. With seamless integration into existing university systems, Wallo transforms the student experience.
-      </p>
-    </div>
-  </main>
-  <script src="https://kit.fontawesome.com/5296c2266e.js" crossorigin="anonymous"></script>
-  <div class="wallet-icon" style="text-align: center;">
-    <i class="fas fa-wallet"></i>
-  </div>
-</body>
-
+      <div class="background">
+        <p>
+          Wallo is a cutting-edge university wallet service that streamlines the way students collect and manage their NFTs. By providing an easy-to-use platform for
