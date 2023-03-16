@@ -8,16 +8,51 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
-
     * {
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
+      height: 100%;
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #05668d;
       color: #f0f3bd;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1C2E46;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-size: 6rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 1rem;
+    }
+
+    a {
+      color: #f0f3bd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #02c39a;
     }
 
     .container {
@@ -28,12 +63,6 @@
       min-height: 100%;
       padding: 2rem;
       overflow-y: auto;
-    }
-
-    .logo {
-      font-size: 6rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
     }
 
     .catchphrase {
@@ -51,14 +80,6 @@
       margin-bottom: 2rem;
     }
 
-    .additional-content {
-      max-width: 800px;
-      font-size: 1.1rem;z
-      line-height: 1.5;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    
     .nft-benefits {
       max-width: 800px;
       font-size: 1.1rem;
@@ -66,12 +87,20 @@
       text-align: center;
       margin-bottom: 2rem;
     }
-    
 
   </style>
 </head>
 <body>
-  </body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <div class="container">
     <div class="logo">Wallo</div>
     <div class="catchphrase">Unlock the future of university blockchain wallets</div>
@@ -85,7 +114,6 @@
         <li><strong>Verifiability:</strong> NFTs are unique and easily verifiable, ensuring that each student's achievements are genuine and tamper-proof.</li>
         <li><strong>Transferability:</strong> NFTs can be easily transferred between parties, allowing students to share their accomplishments with future employers, academic institutions, or other stakeholders.</li>
         <li><strong>Efficiency:</strong> NFTs simplify the process of issuing, managing, and verifying student credentials, saving time and resources for both students and institutions.</li>
-        <li><strong
      </div>
   </div>
 </body>
